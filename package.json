@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc tape ./test/*.js",
+    "test": "nyc tape ./test/*.js"
   },
   "repository": {
     "type": "git",

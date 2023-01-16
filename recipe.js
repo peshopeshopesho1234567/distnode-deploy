@@ -1,6 +1,6 @@
 module.exports = class Recipe {
   constructor(id) {
-    this.id = Numer(id);
+    this.id = Number(id);
     this.name = null;
   }
   async hydrate() {

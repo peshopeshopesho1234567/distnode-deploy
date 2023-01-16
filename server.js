@@ -15,7 +15,7 @@ server.get('/recipes/:id', async (req, reply) => {
   return recipe;
 });
 
-server.lsiten(PORT, HOST, (err, host) => {
-  console.log(`Server running at ${host});
+server.listen(PORT, HOST, (err, host) => {
+  console.log(`Server running at ${host}`);
 });
 

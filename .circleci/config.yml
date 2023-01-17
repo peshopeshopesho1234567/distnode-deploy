@@ -11,6 +11,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "NPM install"
+          command: "npm install"
+      - run:
           name: "Test Job"
           command: "npm test"
   say-hello:
@@ -25,9 +28,6 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-      - run:
-          name: "test"
-          command: "npm test"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
